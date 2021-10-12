@@ -153,8 +153,8 @@ body {
 .links .twitter {
   font-size: 40px;
   color: inherit;
-  -webkit-transition: 100ms linear;
-  transition: 100ms linear;
+  -webkit-transition: 300ms linear;
+  transition: 300ms linear;
 }
 
 .links .twitter:hover {
@@ -206,6 +206,36 @@ body {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
   background-color: #ddd8d8;
+}
+
+@media (max-width: 695px) {
+  .main {
+    min-width: 280px !important;
+    min-height: 700px !important;
+  }
+  .random-quote-text {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    font-size: 25px !important;
+  }
+  .button-box {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    margin-top: 100px !important;
+  }
+  .quote-author {
+    font-size: 25px !important;
+  }
+  .links {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
 }
 
 @-webkit-keyframes twik {

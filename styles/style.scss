@@ -94,7 +94,7 @@ body {
     .twitter {
         font-size: 40px;
         color: inherit;
-        transition: 100ms linear;
+        transition: 300ms linear;
         &:hover {
             animation: twik 300ms ease-in-out  infinite forwards;
         }
@@ -135,6 +135,28 @@ body {
     }
     
 }
+
+@media (max-width: 695px) {
+    .main {
+        min-width: 280px !important;
+        min-height: 700px !important;
+    }
+    .random-quote-text {
+        flex-direction: column !important;
+        font-size: 25px !important;
+    }
+    .button-box {
+        flex-direction: column !important;
+        margin-top: 100px !important;
+    }
+    .quote-author {
+        font-size: 25px !important;
+    }
+    .links {
+        flex-direction: column-reverse !important;
+    }
+}
+
 
 // ANIMATIONS 
 @keyframes twik {
