@@ -1,0 +1,248 @@
+body {
+  background-color: #545F66;
+  -webkit-transition: 300ms linear;
+  transition: 300ms linear;
+  color: #545F66;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 65%;
+  max-width: 1350px;
+  min-width: 650px;
+  min-height: 370px;
+  background-color: #F3F7F0;
+  color: inherit;
+  margin: 200px auto;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  -webkit-box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.486);
+          box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.486);
+}
+
+.main .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.quote-wrapper {
+  height: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quote-wrapper .random-quote-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: inherit;
+  opacity: 1;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  font-size: 35px;
+  text-align: center;
+  padding: 25px;
+  margin: 10px 30px 30px;
+  text-shadow: 4px 4px 7px #0000005e;
+  font-family: 'Noto Serif', serif;
+  opacity: 0;
+}
+
+.quote-wrapper .random-quote-text::before {
+  margin: 0px 10px 0px 0px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10d";
+}
+
+.quote-wrapper .random-quote-text::after {
+  margin: 0px 0px 0px 10px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+}
+
+.button-box .quote-author-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  opacity: 0;
+  height: 75px;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.button-box .quote-author-block .house-shield {
+  margin: 0 0 0 20px;
+  height: 100%;
+}
+
+.button-box .quote-author-block .quote-author {
+  margin: 0px 0px 0px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 300ms linear;
+  transition: 300ms linear;
+  opacity: 1;
+  color: inherit;
+  font-family: 'Courgette', cursive;
+  font-size: 30px;
+  text-shadow: 4px 4px 7px #0000005e;
+}
+
+.button-box .quote-author-block .quote-author::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f4ff";
+  margin-right: 10px;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.links .twitter {
+  font-size: 40px;
+  color: inherit;
+  -webkit-transition: 100ms linear;
+  transition: 100ms linear;
+}
+
+.links .twitter:hover {
+  -webkit-animation: twik 300ms ease-in-out  infinite forwards;
+          animation: twik 300ms ease-in-out  infinite forwards;
+}
+
+.links .twitter:active {
+  font-size: 35px;
+}
+
+.links .generate-qoute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Noto Serif', serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #F3F7F0;
+  font-weight: bold;
+  background-color: #9b9b9b;
+  border: 2px solid #9b9b9b;
+  border-radius: 3px;
+  width: 150px;
+  padding: 5px 0;
+  margin: 20px 50px;
+  cursor: pointer;
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+}
+
+.links .generate-qoute:hover i {
+  -webkit-animation: twik 300ms ease-in-out  infinite forwards;
+          animation: twik 300ms ease-in-out  infinite forwards;
+}
+
+.links .generate-qoute i {
+  margin: 0 0 0 10px;
+  font-size: 25px;
+}
+
+.links .generate-qoute:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  background-color: #ddd8d8;
+}
+
+@-webkit-keyframes twik {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+  }
+  75% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes twik {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(7deg);
+            transform: rotate(7deg);
+  }
+  75% {
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

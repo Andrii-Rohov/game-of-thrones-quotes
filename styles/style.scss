@@ -1,0 +1,153 @@
+body {
+    background-color: #545F66;
+    transition: 300ms linear;
+    color: #545F66;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 65%;
+    max-width: 1350px;
+    min-width: 650px;
+    min-height: 370px;
+    background-color: #F3F7F0;
+    color: inherit;
+    margin: 200px auto;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 7px 7px 15px 1px rgba(0, 0, 0, 0.486);
+    .button-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.quote-wrapper {
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .random-quote-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: inherit;
+        opacity: 1;
+        transition: 300ms ease-in-out;
+        font-size: 35px;
+        text-align: center;
+        padding: 25px;
+        margin: 10px 30px 30px;
+        text-shadow: 4px 4px 7px #0000005e;
+        font-family: 'Noto Serif', serif;
+        opacity: 0;
+        &::before {
+            margin: 0px 10px 0px 0px;
+            font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f10d";
+            
+        }
+        &::after {
+            margin: 0px 0px 0px 10px;
+            font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f10e";
+            
+        }
+    
+    }
+}
+.button-box {
+    .quote-author-block {
+        display: flex;
+        flex-direction: row;
+        opacity: 0;
+        height: 75px;
+        transition: 300ms ease-in-out;
+        .house-shield {
+            margin: 0 0 0 20px;
+            height: 100%;
+        }
+        .quote-author {
+            margin: 0px 0px 0px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 300ms linear;
+            opacity: 1;
+            color: inherit;
+            font-family: 'Courgette', cursive;
+            font-size: 30px;
+            text-shadow: 4px 4px 7px #0000005e;
+            &::before {
+                font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f4ff";
+                margin-right: 10px;
+            }
+        }
+        
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .twitter {
+        font-size: 40px;
+        color: inherit;
+        transition: 100ms linear;
+        &:hover {
+            animation: twik 300ms ease-in-out  infinite forwards;
+        }
+        &:active {
+            font-size: 35px;
+        }
+    }
+    .generate-qoute {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Noto Serif', serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: #F3F7F0;
+        font-weight: bold;
+        background-color: rgb(155, 155, 155);
+        border: 2px solid rgb(155, 155, 155);
+        border-radius: 3px;
+        width: 150px;
+        padding: 5px 0;
+        margin: 20px 50px;
+        cursor: pointer;
+        transition: 200ms linear;
+        &:hover {
+         i {
+            animation: twik 300ms ease-in-out  infinite forwards;
+         }   
+        }
+        i {
+            margin: 0 0 0 10px;
+            font-size: 25px;
+        }
+        &:active {
+            transform: scale(0.97);
+            background-color: rgb(221, 216, 216);
+        }
+    }
+    
+}
+
+// ANIMATIONS 
+@keyframes twik {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(7deg);
+    }
+    75% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
